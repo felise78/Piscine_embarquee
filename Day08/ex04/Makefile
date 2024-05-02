@@ -8,7 +8,9 @@ CFLAGS		=	-mmcu=atmega328p -Os -DF_CPU=16000000UL -DBAUDRATE=115200
 
 SRC			=	main.c \
 				uart.c \
-				parsing.c
+				parsing.c \
+				utils.c \
+				spi.c
 
 all: hex flash 
 
